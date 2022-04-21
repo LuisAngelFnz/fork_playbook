@@ -24,8 +24,14 @@ function Profesor(nombrePila, apellido, edad, genero, intereses, materia) {
 }
 
 // console.log(Profesor('Angel', 'Fernandez', 28, 'Hombre', 'Learn python', 'historia'));
+console.log(Object.getOwnPropertyNames(Profesor.prototype));
+console.log(Object.getOwnPropertyNames(Persona.prototype));
+
+console.log(Persona.prototype.saludo);
+console.log(Profesor.prototype.saludo);
+
+Profesor.prototype = Object.create(Persona.prototype);
 
 console.log(Profesor.prototype)
-// Profesor.prototype = Object.create(Persona.prototype);
 
 
