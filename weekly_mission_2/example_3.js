@@ -1,19 +1,19 @@
 // Ejemplo 3: Objeto con diferentes propiedades
-const myObject3 = {
-  name: "Tulio",
-  age: 2,
-  nicknames: [
-   "Tulipan",
-    "Tulancingo",
+const java_obj = {
+  name      : "Masha",
+  age       : 2,
+  nicknames : [
+    "Tulipan",
     "Tulish"
+    "Tulancingo",
   ],
-  address: {
-    zip_code: "10000",
-    street: "Dr. Vertiz 11 Benito Juarez",
-    city: "CDMX"
+  address : {
+    zip_code : "10000",
+    street   : "Alaminos",
+    city     : "Veracruz"
   }
 }
 console.log("Ejemplo 3: Objeto con diferentes propiedades")
-console.log(myObject3)
-console.log(myObject3.name)
-console.log(myObject3["address"])
+console.log(java_obj)
+console.log(java_obj.name)
+console.log(java_obj["address"])
