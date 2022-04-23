@@ -83,4 +83,5 @@ console.log(explorers.reduce((acc, each_explorer) => acc += each_explorer.exerci
 console.log('Obtén la validación si al menos uno de los explorers tiene la propiedad exercisesFinished en frontend como true, usa SOME')
 console.log(explorers.some(each_explorer => each_explorer.missions.frontend.exercisesFinished))
 
-// Obtén la validación si todos los explorers tienen la propiedad isFinished del onboarding como true. Usa EVERY.
+console.log('Obtén la validación si todos los explorers tienen la propiedad isFinished del onboarding como true. Usa EVERY.')
+console.log(explorers.every(each_explorer => each_explorer.missions.onboarding.isFinished));
