@@ -75,6 +75,10 @@ console.log(explorers.filter(each_explorer => each_explorer.stack.includes('js')
 
 console.log('Busca el primer explorer que sea de la CDMX, usa FIND');
 console.log(explorers.find(each_explorer => each_explorer.city === 'CDMX'))
-// Obtén la suma de todos los exercises_completed, usa REDUCE
+
+
+console.log('Obtén la suma de todos los exercises_completed, usa REDUCE')
+console.log(explorers.reduce((acc, each_explorer) => acc += each_explorer.exercises_completed,0))
+
 // Obtén la validación si al menos uno de los explorers tiene la propiedad exercisesFinished en frontend como true, usa SOME
 // Obtén la validación si todos los explorers tienen la propiedad isFinished del onboarding como true. Usa EVERY.
