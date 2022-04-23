@@ -62,3 +62,6 @@ const explorers = [
 console.log('Imprime el nombre (propiedad name) de cada explorer en la lista, usa FOR EACH');
 explorers.forEach(each_explorer => console.log(each_explorer.name));
 
+console.log('Imprime el stack de cada explorer, usa FOR EACH')
+explorers.forEach(each_explorer => console.log(each_explorer.stack))
+
