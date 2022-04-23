@@ -6,4 +6,4 @@ describe('Pruebas de unidad de clase Ajolonauta', () => {
 
         expect(woopa.name).toBe('Woopa');
     });
-}) 
+});
