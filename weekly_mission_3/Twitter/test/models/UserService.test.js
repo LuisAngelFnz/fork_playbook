@@ -14,4 +14,20 @@ describe('Test Suit for class UserService', () => {
         expect(obj_user_service.username).toBe('Kinser');
         expect(obj_user_service.name).toBe('Luis Angel');
     });
+
+    test('Case 2) Get all user data in list from method getInfo', ()=>{
+
+        const obj_user_service = UserService.create(
+            2,
+            'lfernandez',
+            'Luis Angel'
+        );
+
+        const info_users = UserService.getInfo(obj_user_service);
+
+        expect(info_users[0]).toBe(2);
+        expect(info_users[1]).toBe('lfernandez');
+        expect(info_users[2]).toBe('Luis Angel');
+        expect(info_users[3]).toBe('Sin bio');
+    });
 });
