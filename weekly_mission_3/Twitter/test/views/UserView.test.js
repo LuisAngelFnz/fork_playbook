@@ -18,6 +18,14 @@ describe('Test Suit for class UserView',()=>{
         const result = UserView.createUser(payload);
 
         expect(result.error).toMatch(/necesitan tener un payload válido/);
-
     });
+
+    test('3. Return an error object when try to create a new user with payload with missing properties',() => {
+
+        const payload = {'username':'lfernandez'};
+
+        const result = UserView.createUser(payload);
+
+        expect(result.error).toMatch(/necesitan tener un payload válido/);
+    })
 });
