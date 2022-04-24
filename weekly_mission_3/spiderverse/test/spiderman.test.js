@@ -1,6 +1,6 @@
 describe("Unit Test Suit for Spiderman class ", () => {
   const Spiderman = require('../app/Spiderman')
-  
+
   test('Case 1) Create an Spiderman object', () => {
     
     const andrewGarfield = new Spiderman(
@@ -21,7 +21,7 @@ describe("Unit Test Suit for Spiderman class ", () => {
 
   test('Case 2) Use method getInfo()', () => {
     const tomHolland = new Spiderman(
-      name='Spiderman Marvel',
+      name='Tom Holland',
       age=25,
       actor='Tom Holland',
       movies=5,
