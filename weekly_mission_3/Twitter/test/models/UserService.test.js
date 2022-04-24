@@ -30,4 +30,16 @@ describe('Test Suit for class UserService', () => {
         expect(info_users[2]).toBe('Luis Angel');
         expect(info_users[3]).toBe('Sin bio');
     });
+
+    test('Case 3) Update username from updateUserUsername method', ()=>{
+        const obj_user_service = UserService.create(
+            33,
+            'lfernandez',
+            'Luis Angel'
+        );
+
+        UserService.updateUserUsername(obj_user_service, 'new_lfernandez')
+
+        expect(obj_user_service.username).toBe('new_lfernandez');
+    });
 });
