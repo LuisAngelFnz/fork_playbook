@@ -7,7 +7,7 @@ describe('Test Suit for class UserView',()=>{
         const payload = null;
 
         const result = UserView.createUser(payload);
-
+        
         expect(result.error).toMatch(/payload not existe/);
     });
 });
