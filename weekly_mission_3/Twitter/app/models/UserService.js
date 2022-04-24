@@ -8,6 +8,16 @@ class UserService{
             name=name
         );
     }
+
+    static getInfo(obj_user){
+
+        return [
+            obj_user.id,
+            obj_user.username,
+            obj_user.name,
+            obj_user.bio
+        ]
+    }
 }
 
 module.exports = UserService
