@@ -32,4 +32,20 @@ describe('Test Suit for class User', () => {
         expect(obj_user.getLastUpdated).not.toBeUndefined();
     });
 
+    test('Case 3) Add setters methods', () => {
+        const obj_user = new User(
+            id=300,
+            username='Kinser',
+            name='Luis Angel',
+            bio='Bio',
+        );
+
+        obj_user.setUserName = 'New User';
+        expect(obj_user.username).toBe('New User');
+        
+        obj_user.setBio = 'Other bio';
+        expect(obj_user.bio).toBe('Other bio');
+
+    });
+
 });
