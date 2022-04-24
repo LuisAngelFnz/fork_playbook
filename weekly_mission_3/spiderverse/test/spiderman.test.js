@@ -1,6 +1,8 @@
 describe("Unit Test Suit for Spiderman class ", () => {
   test('Case 1) Create an Spiderman object', () => {
+    
     const Spiderman = require('../app/Spiderman')
+    
     const andrewGarfield = new Spiderman(
       name='Spiderman Sony',
       age=31,
