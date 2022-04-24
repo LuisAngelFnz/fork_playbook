@@ -49,7 +49,7 @@ describe('Test Suit for class UserService', () => {
         const obj_user2 = UserService.create(2,'userName2', 'name2');
         const obj_user3 = UserService.create(3,'userName3', 'name3');
 
-        const all_user_names = UserService.getAllUsernames([obj_user2,obj_user2,obj_user3]);
+        const all_user_names = UserService.getAllUsernames([obj_user1,obj_user2,obj_user3]);
 
         expect(all_user_names).toContain('userName1');
         expect(all_user_names).toContain('userName2');

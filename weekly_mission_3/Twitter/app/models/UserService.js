@@ -22,6 +22,10 @@ class UserService{
     static updateUserUsername(obj_user, new_username){
         obj_user.setUserName = new_username;
     }
+
+    static getAllUsernames(list_obj_users){
+        return list_obj_users.map(each_user => each_user.username || 'not found' )
+    }
 }
 
 module.exports = UserService
