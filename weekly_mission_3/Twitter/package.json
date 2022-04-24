@@ -1,0 +1,12 @@
+{
+  "name": "twiter.json",
+  "version": "1.0.0",
+  "description": "Nuevo proyecto para LaunchX de Twitter",
+  "main": "index.js",
+  "scripts": {
+    "test" : "node ./node_modules/.bin/jest",
+    "start": "node index.js"
+  },
+  "author": "Luis Angel Fernandez",
+  "license": "ISC"
+}
