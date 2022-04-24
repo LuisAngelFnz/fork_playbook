@@ -7,7 +7,17 @@ describe('Test Suit for class UserView',()=>{
         const payload = null;
 
         const result = UserView.createUser(payload);
-        
+
         expect(result.error).toMatch(/payload not existe/);
+    });
+
+    test('2. Return an error object when try to create a new user with a payload with invalid properties', () =>{
+
+        const payload = {'username':null, 'name':'Luis', 'username':'lfernandez'};
+
+        const result = UserView.createUser(payload);
+
+        expect(result.error).toMatch(/necesitan tener un payload válido/);
+
     });
 });
