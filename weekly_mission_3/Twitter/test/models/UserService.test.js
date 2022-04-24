@@ -42,4 +42,17 @@ describe('Test Suit for class UserService', () => {
 
         expect(obj_user_service.username).toBe('new_lfernandez');
     });
+
+    test('Case 4) Given a list of users give me the list of usernames',()=>{
+
+        const obj_user1 = UserService.create(1,'userName1', 'name1');
+        const obj_user2 = UserService.create(2,'userName2', 'name2');
+        const obj_user3 = UserService.create(3,'userName3', 'name3');
+
+        const all_user_names = UserService.getAllUsernames([obj_user2,obj_user2,obj_user3]);
+
+        expect(all_user_names).toContain('userName1');
+        expect(all_user_names).toContain('userName2');
+        expect(all_user_names).toContain('userName3');
+    });
 });
