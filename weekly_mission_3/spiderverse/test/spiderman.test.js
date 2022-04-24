@@ -1,5 +1,6 @@
 describe("Unit Test Suit for Spiderman class ", () => {
   test('Case 1) Create an Spiderman object', () => {
+    const Spiderman = require('../app/Spiderman')
     const andrewGarfield = new Spiderman(
       name='Spiderman Sony',
       age=31,
@@ -13,6 +14,6 @@ describe("Unit Test Suit for Spiderman class ", () => {
     expect(andrewGarfield.actor).toBe('Andrew Garfield');
     expect(andrewGarfield.movies).toBe(2);
     expect(andrewGarfield.studio).toBe('Sony');
-    
+
   });
 })
