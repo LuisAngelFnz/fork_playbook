@@ -1,5 +1,6 @@
 
 describe('Test Suit for class User', () => {
+    const User = require('../../app/models/User.js');
     test('Case 1) Create object from class User',() => {
 
         const obj_user = new User(
