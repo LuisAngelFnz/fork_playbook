@@ -18,6 +18,10 @@ class UserService{
             obj_user.bio
         ]
     }
+
+    static updateUserUsername(obj_user, new_username){
+        obj_user.setUserName = new_username;
+    }
 }
 
 module.exports = UserService
