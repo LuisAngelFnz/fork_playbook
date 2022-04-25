@@ -1,3 +1,5 @@
+const UserService = require('../models/UserService');
+
 class UserView{
     
     static createUser(payload){
@@ -5,14 +7,18 @@ class UserView{
         
         const elements = ['id','username','name'];
         
-        while (elements){
+        while (elements.length != 0){
             let key = elements.pop();
-            if (! payload.hasOwnProperty(key) | payload[key] == null){
+            if (!(payload.hasOwnProperty(key) && payload[key] != null)){
                 return {'error':'necesitan tener un payload válido'}
             }
         }
-
-
+        
+        return UserService.create(
+            payload.id,
+            payload.username,
+            payload.name
+        )
     }
 }
 
