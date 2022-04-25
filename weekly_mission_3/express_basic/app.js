@@ -11,3 +11,7 @@ app.get('/', (req, res)=>{
 app.listen(port, ()=>{
     console.log(`Ejemplo app escuchando por el puerto:${port}`);
 });
+
+app.get('/launchx', (req,res)=>{
+    res.send('Bienvenidos a Launchx!!!!');
+});
