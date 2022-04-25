@@ -1,7 +1,7 @@
 
 describe('Test Suit for class UserService', () => {
     
-    const UserService = require('../../app/models/UserService');
+    const UserService = require('../../app/services/UserService');
 
     test('Case 1) Create object from UserService', () => {
         const obj_user_service = UserService.create(
