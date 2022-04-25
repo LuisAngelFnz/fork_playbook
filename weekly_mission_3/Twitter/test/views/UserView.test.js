@@ -34,9 +34,9 @@ describe('Test Suit for class UserView',()=>{
         const payload = {'id':4, 'username':'lfernandez', 'name':'Luis'};
 
         const result = UserView.createUser(payload);
-
+ 
         expect(result.id).toBe(4);
         expect(result.username).toBe('lfernandez');
-        expect(result.nam).toBe('Luis');
+        expect(result.name).toBe('Luis');
     });
 });
