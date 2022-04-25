@@ -20,3 +20,7 @@ app.get('/explorersInNode', (req,res)=>{
     const explorer = {'name':'Explorer', 'msg':'Hello'};
     res.send(explorer);
 });
+
+app.get('/explorers/:explorerName', (request,response)=>{
+    response.send(request.params);
+});
