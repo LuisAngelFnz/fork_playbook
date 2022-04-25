@@ -1,5 +1,5 @@
 class User{
-    constructor(id, username, name, bio='Sin bio'){
+    constructor(id=1, username='', name='', bio=''){
         this.id          = id;
         this.username    = username;
         this.name        = name;
