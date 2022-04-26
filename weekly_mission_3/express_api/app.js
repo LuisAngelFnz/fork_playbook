@@ -1,12 +1,26 @@
-// Usando objeto express
-const express = require('express')
-// App de Express
-const app = express()
-app.use(express.json()) // Indicamos que usaremos JSON
-// Puerto en que vamos a ver nuestra app: localhost:3000
+const express = require('express');
+
+const app = express();
+
+app.use(express.json());
+
 const port = 3000
 
-// Con esto inicializamos esta app
+app.get('/v1/explorers', (request, response)=>{
+    console.log(`Api Explorers GET ALL requests ${new Date()}`);
+
+    const explorers = [];
+
+    for (let i = 0; i < 5; i++) {
+        explorers.push({
+            'id'  : i,
+            'name': `Angel${i}`
+        })
+    }
+
+    response.status(200).json(explorers);
+});
+
 app.listen(port, () => {
  console.log(`Example app listening on port ${port}`)
-})
+});
