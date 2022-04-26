@@ -21,6 +21,16 @@ app.get('/v1/explorers', (request, response)=>{
     response.status(200).json(explorers);
 });
 
+app.get('/v1/explorers/:id',(request, response)=>{
+    console.log(`Api Explorers GET request ${new Date()}`);
+    console.log(`Getting explorer with id ${request.params.id}`);
+
+    const explorer = {'id':1,'name':'Luis'};
+    response.status(200).json(explorer);
+});
+
+
 app.listen(port, () => {
  console.log(`Example app listening on port ${port}`)
 });
+
