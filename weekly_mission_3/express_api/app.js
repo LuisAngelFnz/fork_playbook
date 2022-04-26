@@ -37,6 +37,15 @@ app.post('/v1/explorers', (request, response)=>{
     response.status(201).json({'message':'Created'});
 });
 
+app.put('/v1/explorers/:id', (request, response)=>{
+    console.log(`Api Explorers DELETE request ${new Date()}`);
+    console.log(`Update explorer with id ${request.params.id}`);
+
+    const requestBody = request.body;
+    console.log(`requestBody: ${requestBody}`);
+    response.status(200).json({'message':'Update OK'});
+});
+
 app.listen(port, () => {
  console.log(`Example app listening on port ${port}`)
 });
