@@ -29,6 +29,13 @@ app.get('/v1/explorers/:id',(request, response)=>{
     response.status(200).json(explorer);
 });
 
+app.post('/v1/explorers', (request, response)=>{
+    console.log(`Api Explorers POST request ${new Date()}`);
+
+    const requestBody = request.body;
+
+    response.status(201).json({'message':'Created'});
+});
 
 app.listen(port, () => {
  console.log(`Example app listening on port ${port}`)
